@@ -1,0 +1,63 @@
+html {
+  	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  	box-sizing: inherit;
+}
+
+body {
+	background-color: rgba(238, 237, 237, 0.22);
+}
+
+img {
+  	max-width: 100%;
+  	height: auto;
+}
+
+h1, h2, h3, p {
+  	padding: 0;
+  	margin: 0;
+}
+
+button, input {
+  	cursor: pointer;
+}
+
+.container-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%) 
+}
+
+.banner {
+	&__preview {
+		min-height: 250px;
+		overflow: hidden;
+	
+		a {
+			text-decoration: none;
+			color: inherit;
+	  
+			&:hover {
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+
+		img {
+			padding: 20px 20px 0 20px;
+		}
+	}
+
+	&__text {
+		max-height: 72px;
+		overflow: hidden;
+	}
+}
+
+@import "./bootstrap-imports.scss";

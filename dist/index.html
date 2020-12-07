@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <script src=" https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.slim.min.js"></script>
+    
+    <title>Редактор баннера</title></head>
+<body>
+    
+    
+    
+    
+    <div class="container container-center">
+        <div class="row justify-content-center no-gutters">
+    
+            <div class="card" style="max-width: 840px;">
+                <div class="row mx-0">
+                    <div class="col-md-4  p-0">
+                        
+                        <div id="bannerPreview" class="banner__preview  card  mt-4 ml-5">
+                            <a href="index.html" id="bannerLink">
+                                <img src="https://ulight.ru/uploads/images/sections/original/93.jpg" id="bannerImg" class="banner__img card-img-top" alt="Картинка баннера">
+                                <div class="card-body">
+                                    <p class="banner__text card-text font-weight-bold" id="bannerText">Здесь будет ваш текст</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title ">Cоздай баннер в 1 клик</h4>
+                            <p class="card-text mb-3"><small> Заполните поля формы
+                                и сохраните картинку в формате PNG <br> или скопируйте 
+                                в буфер обмена HTML-верстки или JSON</small>
+                            </p>
+            
+                            <form class="form d-flex flex-column justify-content-start" action="/new" method="post">
+                                <div class="form-group">
+                                    <label for="formImg">Ссылка на картинку</label>
+                                    <input  name="itemImg" 
+                                        type="url"
+                                        id="formImg"
+                                        class="form-control" 
+                                        placeholder="https://example.com" 
+                                        pattern="https://.*" 
+                                        size="30" 
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formColor">Цвет фона</label>
+                                    <input name="itemColor" 
+                                        type="color" 
+                                        id="formColor"
+                                        class="form-control"
+                                        value="#ffffff">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formLink">Ссылка баннера</label>
+                                    <input name="itemLink" 
+                                        type="url" 
+                                        id="formLink"
+                                        class="form-control"
+                                        placeholder="https://example.com" 
+                                        pattern="https://.*">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form__textarea">Текст баннера</label>
+                                    <textarea name="itemText"
+                                        id="formTextarea"
+                                        class="form-control" 
+                                        placeholder="Здесь будет ваш текст"
+                                        rows="3"></textarea>
+                                </div>
+                                <div class="alert alert-warning" role="alert">Пожалуйста, заполните все поля формы!</div>
+                                <div class="form-group">
+                                    <div class="form__buttons mt-2">
+                                        <button type="button" id="btnPNG" class="btn btn-success mr-3">PNG</button>
+                                        <button type="button" id="btnHTML" class="btn  btn-success mr-3" >HTML</button>
+                                        <button type="button" id="btnJSON" class="btn btn-success" >JSON</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>
