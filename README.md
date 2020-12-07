@@ -1,6 +1,6 @@
 ## banner_editor_avito
 
-avito test task
+https://paulinalyu.github.io/banner_editor_avito/
 
 ## Описание задания 
 
